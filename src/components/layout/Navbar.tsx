@@ -54,7 +54,7 @@ export default function Navbar() {
 						</button>
 					))}
 					<button
-						onClick={() => { }}
+						onClick={() => toast('Em desenvolvimento')}
 						className="font-display text-xl tracking-widest bg-red text-white px-4 py-2 w-full text-center"
 					>
 						LOGIN

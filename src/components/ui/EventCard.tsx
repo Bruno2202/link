@@ -10,14 +10,14 @@ export default function evententCard({ event, index }: Props) {
     return (
         <div
             key={event.id}
-            className="relative flex flex-col md:flex-row gap-6 p-6 md:p-8 bg-gray border-2 border-white/10 transition-all hover:border-red hover:-translate-y-0.5"
+            className="relative flex flex-col md:flex-row gap-5 md:gap-6 p-5 sm:p-6 md:p-8 bg-gray border-2 border-white/10 transition-all hover:border-red hover:-translate-y-0.5"
         >
-            <div className="absolute top-6 right-6 font-display text-7xl text-white/5 leading-none select-none">
+            <div className="absolute top-4 right-4 sm:top-6 sm:right-6 font-display text-5xl sm:text-7xl text-white/5 leading-none select-none">
                 {String(index + 1).padStart(2, '0')}
             </div>
 
-            <div className="flex flex-col items-center justify-center bg-red text-white w-20 h-20 md:w-24 md:h-24">
-                <span className="font-display text-3xl md:text-4xl leading-none">
+            <div className="flex flex-col items-center justify-center bg-red text-white w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24">
+                <span className="font-display text-2xl sm:text-3xl md:text-4xl leading-none">
                     {new Date(event.date + 'T00:00:00').getDate()}
                 </span>
                 <span className="font-mono text-[10px] tracking-widest uppercase">

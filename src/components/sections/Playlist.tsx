@@ -11,10 +11,11 @@ const MUSICAS_DESTAQUE = [
 	{ titulo: 'Jeová', artista: 'Renascer Praise', duracao: '7:33' },
 ]
 
+
 export default function Playlist() {
 	return (
-		<section id="playlist" className="bg-gray py-24 px-4 md:px-8 relative overflow-hidden">
-			<div className="absolute -right-8 top-1/2 -translate-y-1/2 font-display text-[15vw] text-white/2 leading-none select-none rotate-12">
+		<section id="playlist" className="bg-gray py-16 sm:py-20 md:py-24 px-4 sm:px-6 md:px-8 relative overflow-hidden">
+			<div className="absolute -right-8 top-1/2 -translate-y-1/2 font-display text-[22vw] sm:text-[15vw] text-white/2 leading-none select-none rotate-12">
 				MUSIC
 			</div>
 
@@ -28,7 +29,7 @@ export default function Playlist() {
 
 				<div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
 					<div className="flex flex-col gap-6">
-						<div className="relative overflow-hidden rounded-none bg-[#9E0016] border-2 border-gray-mid" style={{ height: 380 }}>
+						<div className="relative overflow-hidden rounded-none bg-[#9E0016] border-2 border-gray-mid h-70 sm:h-95">
 							<iframe
 								title="Playlist do Link"
 								src="https://open.spotify.com/embed/playlist/6c1ddqmn1gHdlBn3t5wFCN?utm_source=generator&theme=1"
@@ -44,14 +45,14 @@ export default function Playlist() {
 							href="https://open.spotify.com/playlist/6c1ddqmn1gHdlBn3t5wFCN"
 							target="_blank"
 							rel="noopener noreferrer"
-							className="flex items-center justify-center gap-3 font-display text-xl tracking-widest bg-[#1DB954] text-black px-8 py-4 hover:bg-[#1DB954]/80 transition-colors"
+							className="flex items-center justify-center gap-3 font-display text-lg sm:text-xl tracking-widest bg-[#1DB954] text-black px-6 sm:px-8 py-3 sm:py-4 hover:bg-[#1DB954]/80 transition-colors"
 						>
 							<SiSpotify size={20} /> SEGUIR NO SPOTIFY 
 						</a>
 					</div>
 
 					<div>
-						<h3 className="font-display text-2xl text-white mb-6 flex items-center gap-3">
+						<h3 className="font-display text-xl sm:text-2xl text-white mb-6 flex items-center gap-3">
 							<Headphones size={20} className="text-red" /> MAIS TOCADAS
 						</h3>
 						<div className="flex flex-col gap-1">

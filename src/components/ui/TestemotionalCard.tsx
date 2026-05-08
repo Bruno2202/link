@@ -8,8 +8,8 @@ interface Props {
 
 export default function TestemotionalCard({ t, i }: Props) {
     return (
-        <div key={t.id} className={`p-6 flex flex-col gap-4 hover:-translate-y-0.5 transition-all ${i === 0 ? 'bg-red md:col-span-2 lg:col-span-1' : 'bg-gray border-2 border-white/10 hover:border-red'}`}>
-            <div className="font-display text-6xl text-white/10 leading-none -mb-4">"</div>
+        <div key={t.id} className={`p-5 sm:p-6 flex flex-col gap-4 hover:-translate-y-0.5 transition-all ${i === 0 ? 'bg-red md:col-span-2 lg:col-span-1' : 'bg-gray border-2 border-white/10 hover:border-red'}`}>
+            <div className="font-display text-5xl sm:text-6xl text-white/10 leading-none -mb-3 sm:-mb-4">"</div>
 
             <p className={`font-body text-base leading-relaxed flex-1 ${i === 0 ? 'text-white' : 'text-white/80'}`}>
                 {t.text}

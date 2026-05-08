@@ -12,13 +12,13 @@ const navItems = [
 
 export default function Footer() {
 	return (
-		<footer className="bg-gray border-t border-gray-mid py-12 px-4 md:px-8">
+		<footer className="bg-gray border-t border-gray-mid py-10 sm:py-12 px-4 sm:px-6 md:px-8">
 			<div className="max-w-7xl mx-auto">
 				<div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
 					<div>
 						<img
 							src='assets/logos/link_preto.svg'
-							className='w-28 mb-4'
+							className='w-24 sm:w-28 mb-4'
 						/>
 						<p className="font-body text-white/40 text-sm leading-relaxed max-w-xs">
 							1ª Igreja Presbiteriana Independente de Assis.

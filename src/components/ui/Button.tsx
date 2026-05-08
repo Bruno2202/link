@@ -23,7 +23,7 @@ export default function Button({
     className = '',
     ...props
 }: Props) {
-    const baseStyles = 'flex items-center justify-center cursor-pointer font-body font-semibold text-lg tracking-widest px-8 py-3 transition-all duration-200 border-2';
+    const baseStyles = 'flex items-center justify-center cursor-pointer font-body font-semibold text-base sm:text-lg tracking-widest px-6 sm:px-8 py-2.5 sm:py-3 transition-all duration-200 border-2';
 
     const variants = {
         primary: "bg-red hover:bg-red/80 text-white border-red",

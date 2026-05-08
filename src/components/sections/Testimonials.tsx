@@ -61,7 +61,7 @@ export default function Testimonials() {
 	}
 
 	return (
-		<section id="testemunhos" className="relative bg-black py-24 px-4 md:px-8">
+		<section id="testemunhos" className="relative bg-black py-16 sm:py-20 md:py-24 px-4 sm:px-6 md:px-8">
 			<SectionTitle
 				label='Mural'
 				title='Testemunhos'
@@ -69,6 +69,7 @@ export default function Testimonials() {
 				<Button
 					onClick={handleOpenModal}
 					icon='plus'
+					className="w-full sm:w-auto"
 				>
 					COMPARTILHAR
 				</Button>

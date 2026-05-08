@@ -37,7 +37,7 @@ const EVENTOS: Event[] = [
 
 export default function Agenda() {
 	return (
-		<section id="eventos" className="relative bg-black py-24 px-4 md:px-8">
+		<section id="eventos" className="relative bg-black py-16 sm:py-20 md:py-24 px-4 sm:px-6 md:px-8">
 			<SectionTitle
 				label='Agenda'
 				title='Encontros'

@@ -15,13 +15,13 @@ export default function Hero() {
 
             <div className="absolute top-0 left-0 w-1 h-full bg-red" />
 
-            <div className="relative z-10 max-w-7xl mx-auto px-6 pt-24 pb-16">
+            <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 pt-24 pb-16">
                 <div className="flex items-center gap-3 mb-8 animate-fade-up" style={{ animationFillMode: 'both' }}>
                     <div className="w-8 h-px bg-red" />
                     <span className="font-mono text-xs tracking-[0.3em] text-white/50 uppercase">1ª IPI de Assis — Est. 2021</span>
                 </div>
 
-                <div className="w-2/3">
+                <div className="w-full sm:w-2/3">
                     <img src='/assets/logos/link_branco.svg' />
                 </div>
 

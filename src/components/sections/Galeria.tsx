@@ -49,7 +49,7 @@ export default function Galeria() {
 	const fotoObj = FOTOS.find(f => f.id === fotoAtiva)
 
 	return (
-		<section id="galeria" className="bg-black py-24 px-4 md:px-8">
+		<section id="galeria" className="bg-black py-16 sm:py-20 md:py-24 px-4 sm:px-6 md:px-8">
 			<div className="max-w-7xl mx-auto">
 				<SectionTitle
 					label='Memórias'
@@ -64,14 +64,14 @@ export default function Galeria() {
 					))}
 				</div>
 
-				<div className="mt-12 p-8 bg-gray border border-gray-mid flex flex-col md:flex-row items-center justify-between gap-6">
+				<div className="mt-12 p-5 sm:p-8 bg-gray border border-gray-mid flex flex-col md:flex-row items-center justify-between gap-6">
 					<div>
-						<div className="font-display text-2xl text-white mb-1">TEM FOTOS DO ENCONTRO?</div>
-						<p className="font-body text-white/50 text-base">
+						<div className="font-display text-xl sm:text-2xl text-white mb-1">TEM FOTOS DO ENCONTRO?</div>
+						<p className="font-body text-white/50 text-sm sm:text-base">
 							Envie seus registros diretamente para a nossa liderança. Vamos adicionar aqui na galeria.
 						</p>
 					</div>
-					<div className="flex items-center gap-2 font-mono text-xs tracking-widest text-red border border-red px-6 py-3">
+					<div className="flex items-center gap-2 font-mono text-xs tracking-widest text-red border border-red px-5 sm:px-6 py-3">
 						<Camera size={16} /> ENVIAR FOTOS
 					</div>
 				</div>
@@ -86,7 +86,7 @@ export default function Galeria() {
 						<ChevronLeft size={40} />
 					</button>
 					<div
-						className="w-full max-w-lg aspect-square flex items-center justify-center"
+						className="w-full max-w-sm sm:max-w-lg aspect-square flex items-center justify-center"
 						style={{ backgroundColor: fotoObj.cor }}
 					>
 						<div className="text-center">
