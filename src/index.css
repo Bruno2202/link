@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+/* Configuração de Tema - Tailwind v4 */
+@theme {
+  --color-red: #ED193A;
+  --color-black: #0A0A0A;
+  --color-white: #FFFFFF;
+  --color-gray: #1A1A1A;
+  --color-gray-mid: #2A2A2A;
+
+  --font-display: 'Bebas Neue';
+  --font-body: 'Barlow Condensed';
+  --font-mono: 'Space Mono';
+
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+  --radius-3xl: 2rem;
+
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  --shadow-red: 0 0 20px rgba(204, 29, 29, 0.3);
+
+  --duration-250: 250ms;
+  --duration-350: 350ms;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: #ED193A;
+  color: #FFFFFF;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0A0A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ED193A;
+}
