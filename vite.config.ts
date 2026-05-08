@@ -26,12 +26,6 @@ export default defineConfig({
 				theme_color: '#ED193A',
 				icons: [
 					{
-						src: '/assets/logos/link.svg',
-						sizes: 'any',
-						type: 'image/svg+xml',
-						purpose: 'any maskable'
-					},
-					{
 						src: '/assets/logos/icon-192.png',
 						sizes: '192x192',
 						type: 'image/png',
@@ -42,6 +36,33 @@ export default defineConfig({
 						sizes: '512x512',
 						type: 'image/png',
 						purpose: 'any maskable'
+					}
+				]
+			},
+			workbox: {
+				navigateFallback: '/app',
+				runtimeCaching: [
+					{
+						urlPattern: ({ url }) => url.pathname.startsWith('/app'),
+						handler: 'NetworkFirst',
+						options: {
+							cacheName: 'app-pages',
+							expiration: {
+								maxEntries: 50,
+								maxAgeSeconds: 60 * 60 * 24 * 7
+							}
+						}
+					},
+					{
+						urlPattern: ({ request }) => request.destination === 'style' || request.destination === 'script' || request.destination === 'image',
+						handler: 'CacheFirst',
+						options: {
+							cacheName: 'app-assets',
+							expiration: {
+								maxEntries: 100,
+								maxAgeSeconds: 60 * 60 * 24 * 30
+							}
+						}
 					}
 				]
 			},
