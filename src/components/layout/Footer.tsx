@@ -1,7 +1,5 @@
-import { Music } from 'lucide-react'
 import { scrollTo } from '../../utils/scroll'
 import { SiInstagram, SiSpotify } from 'react-icons/si'
-import { ImSpotify } from 'react-icons/im'
 
 const navItems = [
 	{ label: 'Início', section: 'hero' },

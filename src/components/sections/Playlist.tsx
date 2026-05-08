@@ -1,4 +1,4 @@
-import { Music, ExternalLink, Headphones, Play } from 'lucide-react'
+import { Headphones, Play } from 'lucide-react'
 import SectionTitle from '../ui/SectionTitle'
 import Callout from '../ui/Callout'
 import { SiSpotify } from 'react-icons/si'

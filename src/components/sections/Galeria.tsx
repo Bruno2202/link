@@ -13,7 +13,7 @@ const FOTOS = [
 	{ id: 8, evento: 'Night of Worship', data: 'Out 2025', cor: '#CC1D1D', label: 'NW 25' },
 ]
 
-function PhotoPlaceholder({ foto, onClick }) {
+function PhotoPlaceholder({ foto, onClick }: any) {
 	return (
 		<button
 			onClick={onClick}
@@ -38,9 +38,9 @@ function PhotoPlaceholder({ foto, onClick }) {
 }
 
 export default function Galeria() {
-	const [fotoAtiva, setFotoAtiva] = useState(null)
+	const [fotoAtiva, setFotoAtiva] = useState<number | null>(null);
 
-	const navFoto = (dir) => {
+	const navFoto = (dir: any) => {
 		const idx = FOTOS.findIndex(f => f.id === fotoAtiva)
 		const next = (idx + dir + FOTOS.length) % FOTOS.length
 		setFotoAtiva(FOTOS[next].id)
