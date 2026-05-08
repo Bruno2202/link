@@ -3,14 +3,14 @@ import { Camera, X, ChevronLeft, ChevronRight } from 'lucide-react'
 import SectionTitle from '../ui/SectionTitle'
 
 const FOTOS = [
-	{ id: 1, evento: 'Encontro Semanal', data: 'Abr 2026', cor: '#CC1D1D', label: 'EN #01' },
+	{ id: 1, evento: 'Encontro Semanal', data: 'Abr 2026', cor: '#ED193A', label: 'EN #01' },
 	{ id: 2, evento: 'Night of Worship', data: 'Mar 2026', cor: '#1A1A1A', label: 'NW 26' },
 	{ id: 3, evento: 'Retiro 2025', data: 'Nov 2025', cor: '#2A2A2A', label: 'RT 25' },
 	{ id: 4, evento: 'Encontro Semanal', data: 'Mar 2026', cor: '#0A0A0A', label: 'EN #08' },
-	{ id: 5, evento: 'Aniversário Link', data: 'Fev 2026', cor: '#CC1D1D', label: 'AN 26' },
+	{ id: 5, evento: 'Aniversário Link', data: 'Fev 2026', cor: '#ED193A', label: 'AN 26' },
 	{ id: 6, evento: 'Culto Jovem', data: 'Jan 2026', cor: '#1A1A1A', label: 'CJ 01' },
 	{ id: 7, evento: 'Encontro Especial', data: 'Dez 2025', cor: '#2A2A2A', label: 'EE 25' },
-	{ id: 8, evento: 'Night of Worship', data: 'Out 2025', cor: '#CC1D1D', label: 'NW 25' },
+	{ id: 8, evento: 'Night of Worship', data: 'Out 2025', cor: '#ED193A', label: 'NW 25' },
 ]
 
 function PhotoPlaceholder({ foto, onClick }: any) {

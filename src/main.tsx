@@ -5,6 +5,7 @@ import { Home } from "./pages/Home";
 import { NotFound } from "./pages/NotFound";
 import { ModalProvider } from "./context/ModalProvider";
 import { Toaster } from "react-hot-toast";
+import { App } from "./pages/App";
 
 const router = createBrowserRouter([
 	{
@@ -12,6 +13,17 @@ const router = createBrowserRouter([
 			{
 				path: "/",
 				element: <Home />,
+			},
+			{
+				path: "/app",
+				element: <App />,
+				children: [
+					{ path: "home", element: <App /> },
+					{ path: "agenda", element: <App /> },
+					{ path: "checkin", element: <App /> },
+					{ path: "notice", element: <App /> },
+					{ path: "profile", element: <App /> },
+				],
 			},
 			{
 				path: "*",
